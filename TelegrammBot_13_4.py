@@ -21,6 +21,7 @@ async def start(message):
 async def all_massages(message):
     print('Введите команду /start, чтобы начать общение.')
     await message.answer('Введите команду /start, чтобы начать общение.')
+
 @dp.message_handler(text=['Calories', 'Калории', 'Ккал'])
 async def set_age(message):
     await message.answer('Введите свой возраст:')
